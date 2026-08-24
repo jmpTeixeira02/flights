@@ -1,5 +1,6 @@
-use core::time;
+pub mod google_flights;
 
+#[derive(Clone, Copy)]
 pub enum Class {
     Economy,
     Premium,
@@ -7,6 +8,7 @@ pub enum Class {
     First,
 }
 
+#[derive(Clone, Copy)]
 pub enum Stops {
     None,
     Any,
@@ -15,50 +17,67 @@ pub enum Stops {
 }
 
 pub struct RoundTripRequest {
-    inbound: Flight,
-    outbound: Flight,
-    minimum_days: usize,
+    pub inbound: FlightRequest,
+    pub outbound: FlightRequest,
+    pub minimum_days: usize,
 }
 
 pub struct RoundTripResponse {
-    inbound: Vec<Response>,
-    outbound: Vec<Response>,
+    pub inbound: Vec<FlightResponse>,
+    pub outbound: Vec<FlightResponse>,
 }
 
-pub struct Flight {
-    origin: Airport,
-    dest: Airport,
-    date: Vec<Date>, // Allow to select multiple possible dates
+#[derive(Clone)]
+pub struct FlightRequest {
+    pub origin: Airport,
+    pub dest: Airport,
+    pub date: Vec<Date>, // Allow for multiple possible dates
 
-    class: Class,
-    passengers: usize,
-    carry_on: bool,
+    pub class: Class,
+    pub stops: Stops,
+    pub passengers: usize,
+    pub carry_on_bags: usize,
 
-    duration: Option<chrono::Duration>,
+    pub duration: Option<chrono::Duration>,
 }
 
-pub struct Response {
-    flight: Flight,
-    company: String,
-    price: f32,
+pub struct FlightResponse {
+    pub flight: FlightRequest,
+    pub company: String,
+    pub price: f32,
 }
 
+#[derive(Clone)]
 pub struct Airport {
-    id: String,
-    name: Option<String>,
+    pub id: String,
+    pub name: Option<String>,
 }
 
+#[derive(Clone)]
 pub struct Date {
-    day: chrono::NaiveDate,
-    time: Option<TimeRange>,
+    pub date: chrono::NaiveDate,
+    pub time: Option<Times>,
 }
 
+#[derive(Clone)]
+pub struct Times {
+    pub departure: Option<TimeRange>,
+    pub arrival: Option<TimeRange>,
+}
+
+#[derive(Clone)]
 pub struct TimeRange {
-    start_hour: usize,
-    end_hour: usize,
+    pub start_hour: usize,
+    pub end_hour: usize,
 }
 
 pub trait Provider {
-    fn search(req: Flight) -> Vec<Response>;
-    fn search_roundtrip(req: RoundTripRequest) -> RoundTripResponse;
+    fn search(
+        &self,
+        req: FlightRequest,
+    ) -> impl std::future::Future<Output = Result<Vec<FlightResponse>, Box<dyn std::error::Error>>>;
+    fn search_roundtrip(
+        &self,
+        req: RoundTripRequest,
+    ) -> impl Future<Output = Result<RoundTripResponse, Box<dyn std::error::Error>>>;
 }

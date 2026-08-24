@@ -1,0 +1,295 @@
+{
+    "search_metadata": {
+        "id": "6a9193907dcfbea3c853372b",
+        "status": "Success",
+        "json_endpoint": "https://serpapi.com/searches/7LgPU3NWDJktwtgeVAOqyg/6a9193907dcfbea3c853372b.json",
+        "markdown_endpoint": "https://serpapi.com/searches/7LgPU3NWDJktwtgeVAOqyg/6a9193907dcfbea3c853372b.md",
+        "created_at": "2026-08-28 13:56:32 UTC",
+        "processed_at": "2026-08-28 13:56:32 UTC",
+        "google_flights_url": "https://www.google.com/travel/flights?hl=en&gl=pt&curr=EUR&tfs=CBwQAhoiEgoyMDI2LTA5LTI2QAhIDmoHCAESA0xJU3IHCAESA01BREABQAFIAWoCEAJwAZgBAg&tfu=EgIIAQ",
+        "raw_html_file": "https://serpapi.com/searches/7LgPU3NWDJktwtgeVAOqyg/6a9193907dcfbea3c853372b.html",
+        "prettify_html_file": "https://serpapi.com/searches/7LgPU3NWDJktwtgeVAOqyg/6a9193907dcfbea3c853372b.prettify",
+        "total_time_taken": 1.07
+    },
+    "search_parameters": {
+        "engine": "google_flights",
+        "hl": "en",
+        "gl": "pt",
+        "type": "2",
+        "departure_id": "LIS",
+        "arrival_id": "MAD",
+        "outbound_date": "2026-09-26",
+        "travel_class": 1,
+        "adults": 2,
+        "stops": 0,
+        "bags": 2,
+        "outbound_times": "8,14",
+        "currency": "EUR"
+    },
+    "best_flights": [
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Humberto Delgado Airport",
+                        "id": "LIS",
+                        "time": "2026-09-26 11:35"
+                    },
+                    "arrival_airport": {
+                        "name": "Adolfo Suárez Madrid-Barajas Airport",
+                        "id": "MAD",
+                        "time": "2026-09-26 13:50"
+                    },
+                    "duration": 75,
+                    "airplane": "Boeing 737",
+                    "airline": "Air Europa",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UX.png",
+                    "travel_class": "Economy",
+                    "flight_number": "UX 1150",
+                    "legroom": "29 in",
+                    "extensions": [
+                        "Below average legroom (29 in)",
+                        "In-seat USB outlet",
+                        "Stream media to your device",
+                        "Carbon emissions estimate: 121 kg"
+                    ]
+                }
+            ],
+            "total_duration": 75,
+            "carbon_emissions": {
+                "this_flight": 122000,
+                "typical_for_this_route": 136000,
+                "difference_percent": -10
+            },
+            "price": 178,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/UX.png",
+            "booking_token": "WyJDalJJVldSVE1HbGhUMjVrZG1kQlJrSXpaRUZDUnkwdExTMHRMUzB0TFc5NVlta3hPRUZCUVVGQlIzRlNhelZGUm1sRmVFVkJFZ1pWV0RFeE5UQWFDd2pJaWdFUUFob0RSVlZTT0J4d3I2RUIiLFtbIkxJUyIsIjIwMjYtMDktMjYiLCJNQUQiLG51bGwsIlVYIiwiMTE1MCJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Humberto Delgado Airport",
+                        "id": "LIS",
+                        "time": "2026-09-26 10:20"
+                    },
+                    "arrival_airport": {
+                        "name": "Adolfo Suárez Madrid-Barajas Airport",
+                        "id": "MAD",
+                        "time": "2026-09-26 12:40"
+                    },
+                    "duration": 80,
+                    "airplane": "Airbus A320",
+                    "airline": "Tap Air Portugal",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TP 1012",
+                    "legroom": "28 in",
+                    "extensions": [
+                        "Below average legroom (28 in)",
+                        "Carbon emissions estimate: 135 kg"
+                    ]
+                }
+            ],
+            "total_duration": 80,
+            "carbon_emissions": {
+                "this_flight": 135000,
+                "typical_for_this_route": 136000,
+                "difference_percent": -1
+            },
+            "price": 230,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+            "booking_token": "WyJDalJJVldSVE1HbGhUMjVrZG1kQlJrSXpaRUZDUnkwdExTMHRMUzB0TFc5NVlta3hPRUZCUVVGQlIzRlNhelZGUm1sRmVFVkJFZ1pVVURFd01USWFDd2lZc3dFUUFob0RSVlZTT0J4dzE5QUIiLFtbIkxJUyIsIjIwMjYtMDktMjYiLCJNQUQiLG51bGwsIlRQIiwiMTAxMiJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Humberto Delgado Airport",
+                        "id": "LIS",
+                        "time": "2026-09-26 14:40"
+                    },
+                    "arrival_airport": {
+                        "name": "Adolfo Suárez Madrid-Barajas Airport",
+                        "id": "MAD",
+                        "time": "2026-09-26 17:00"
+                    },
+                    "duration": 80,
+                    "airplane": "Embraer 195",
+                    "airline": "Tap Air Portugal",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TP 1016",
+                    "legroom": "31 in",
+                    "extensions": [
+                        "Average legroom (31 in)",
+                        "Carbon emissions estimate: 158 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true,
+                    "plane_and_crew_by": "Portugalia - Companhia Portuguesa"
+                }
+            ],
+            "total_duration": 80,
+            "carbon_emissions": {
+                "this_flight": 158000,
+                "typical_for_this_route": 136000,
+                "difference_percent": 16
+            },
+            "price": 230,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+            "booking_token": "WyJDalJJVldSVE1HbGhUMjVrZG1kQlJrSXpaRUZDUnkwdExTMHRMUzB0TFc5NVlta3hPRUZCUVVGQlIzRlNhelZGUm1sRmVFVkJFZ1pVVURFd01UWWFDd2lZc3dFUUFob0RSVlZTT0J4dzE5QUIiLFtbIkxJUyIsIjIwMjYtMDktMjYiLCJNQUQiLG51bGwsIlRQIiwiMTAxNiJdXV0="
+        }
+    ],
+    "other_flights": [
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Humberto Delgado Airport",
+                        "id": "LIS",
+                        "time": "2026-09-26 13:00"
+                    },
+                    "arrival_airport": {
+                        "name": "Adolfo Suárez Madrid-Barajas Airport",
+                        "id": "MAD",
+                        "time": "2026-09-26 15:20"
+                    },
+                    "duration": 80,
+                    "airplane": "Embraer 190",
+                    "airline": "Tap Air Portugal",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+                    "travel_class": "Economy",
+                    "flight_number": "TP 1014",
+                    "legroom": "31 in",
+                    "extensions": [
+                        "Average legroom (31 in)",
+                        "Carbon emissions estimate: 163 kg"
+                    ],
+                    "often_delayed_by_over_30_min": true,
+                    "plane_and_crew_by": "Portugalia - Companhia Portuguesa"
+                }
+            ],
+            "total_duration": 80,
+            "carbon_emissions": {
+                "this_flight": 164000,
+                "typical_for_this_route": 136000,
+                "difference_percent": 21
+            },
+            "price": 352,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/TP.png",
+            "booking_token": "WyJDalJJVldSVE1HbGhUMjVrZG1kQlJrSXpaRUZDUnkwdExTMHRMUzB0TFc5NVlta3hPRUZCUVVGQlIzRlNhelZGUm1sRmVFVkJFZ1pVVURFd01UUWFDd2pBa2dJUUFob0RSVlZTT0J4dzE3OEMiLFtbIkxJUyIsIjIwMjYtMDktMjYiLCJNQUQiLG51bGwsIlRQIiwiMTAxNCJdXV0="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Humberto Delgado Airport",
+                        "id": "LIS",
+                        "time": "2026-09-26 12:30"
+                    },
+                    "arrival_airport": {
+                        "name": "Adolfo Suárez Madrid-Barajas Airport",
+                        "id": "MAD",
+                        "time": "2026-09-26 14:55"
+                    },
+                    "duration": 85,
+                    "airplane": "Airbus A320",
+                    "airline": "Iberia",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
+                    "travel_class": "Economy",
+                    "flight_number": "IB 532",
+                    "legroom": "28 in",
+                    "extensions": [
+                        "Below average legroom (28 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat USB outlet",
+                        "Carbon emissions estimate: 130 kg"
+                    ]
+                }
+            ],
+            "total_duration": 85,
+            "carbon_emissions": {
+                "this_flight": 131000,
+                "typical_for_this_route": 136000,
+                "difference_percent": -4
+            },
+            "price": 376,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
+            "booking_token": "WyJDalJJVldSVE1HbGhUMjVrZG1kQlJrSXpaRUZDUnkwdExTMHRMUzB0TFc5NVlta3hPRUZCUVVGQlIzRlNhelZGUm1sRmVFVkJFZ1ZKUWpVek1ob0xDS0NsQWhBQ0dnTkZWVkk0SEhEQjFRST0iLFtbIkxJUyIsIjIwMjYtMDktMjYiLCJNQUQiLG51bGwsIklCIiwiNTMyIl1dXQ=="
+        },
+        {
+            "flights": [
+                {
+                    "departure_airport": {
+                        "name": "Humberto Delgado Airport",
+                        "id": "LIS",
+                        "time": "2026-09-26 08:25"
+                    },
+                    "arrival_airport": {
+                        "name": "Adolfo Suárez Madrid-Barajas Airport",
+                        "id": "MAD",
+                        "time": "2026-09-26 10:50"
+                    },
+                    "duration": 85,
+                    "airplane": "Airbus A320",
+                    "airline": "Iberia",
+                    "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
+                    "travel_class": "Economy",
+                    "flight_number": "IB 530",
+                    "legroom": "28 in",
+                    "extensions": [
+                        "Below average legroom (28 in)",
+                        "Wi-Fi for a fee",
+                        "In-seat USB outlet",
+                        "Carbon emissions estimate: 130 kg"
+                    ]
+                }
+            ],
+            "total_duration": 85,
+            "carbon_emissions": {
+                "this_flight": 131000,
+                "typical_for_this_route": 136000,
+                "difference_percent": -4
+            },
+            "price": 602,
+            "type": "One way",
+            "airline_logo": "https://www.gstatic.com/flights/airline_logos/70px/IB.png",
+            "booking_token": "WyJDalJJVldSVE1HbGhUMjVrZG1kQlJrSXpaRUZDUnkwdExTMHRMUzB0TFc5NVlta3hPRUZCUVVGQlIzRlNhelZGUm1sRmVFVkJFZ1ZKUWpVek1Cb0xDT2pWQXhBQ0dnTkZWVkk0SEhDUm93UT0iLFtbIkxJUyIsIjIwMjYtMDktMjYiLCJNQUQiLG51bGwsIklCIiwiNTMwIl1dXQ=="
+        }
+    ],
+    "airports": [
+        {
+            "departure": [
+                {
+                    "airport": {
+                        "id": "LIS",
+                        "name": "Humberto Delgado Airport"
+                    },
+                    "city": "Lisbon",
+                    "country": "Portugal",
+                    "country_code": "PT",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLxT3PIh1TwnGsLrG7G-JQRFMG0zIp4uiQ71FTwf1WQHKROUG_veOYAiGQTLGO36g5OCdu9DUrwHrzaA",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG3-nF1u-sTIpnrbZ3a_ly_OcwqDxS9MCOGoiQTX3dJ3ZoIiUsVHqxHC-nmruwZ8aoJZJPM7O5YSmsHR6tp2L_EHV4CnsiNtatHuedKBE"
+                }
+            ],
+            "arrival": [
+                {
+                    "airport": {
+                        "id": "MAD",
+                        "name": "Adolfo Suárez Madrid-Barajas Airport"
+                    },
+                    "city": "Madrid",
+                    "country": "Spain",
+                    "country_code": "ES",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmeVXVi8Qf2opkC-xAX9Z8sqmXLNnCUyEBCH7lY9Du60ePIdqYcgUv_X08z5SxkepA5VBR3iRIMf2cRQ",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQE3EB-Tm8oy6YFOIxbhJY-zUj5c54BiVwOKamJRAcogeUidKas9ZrofZJVWQSiCADP_jfvrpPYRJ2PM3p1Sv_lzWcdo4ph1bLVdvASdA"
+                }
+            ]
+        }
+    ]
+}

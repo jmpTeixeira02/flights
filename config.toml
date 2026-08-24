@@ -1,0 +1,4 @@
+[google_flights]
+url = "https://serpapi.com/search"
+currency = "EUR"
+country = "PT"
