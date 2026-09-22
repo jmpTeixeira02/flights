@@ -1,0 +1,14 @@
+[package]
+name = "google-flights"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+reqwest = { version = "0.13.4", features = ["json", "query"] }
+serde = { version = "1.0.229", features = ["derive"] }
+tokio = { version = "1.53.1", features = ["full"] }
+chrono = "0.4.45"
+flights = { path = "../../protocol" }
+
+[dev-dependencies]
+wiremock = "0.6.5"

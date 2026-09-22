@@ -3,7 +3,8 @@ use std::env;
 use reqwest::header::{HeaderMap, HeaderValue};
 use tokio::task::JoinSet;
 
-use crate::providers::{Class, FlightRequest, FlightResponse, Provider, Stops};
+
+use flights::{Class, FlightRequest, FlightResponse, Provider, Stops, Airport, Date, RoundTripRequest, RoundTripResponse};
 
 #[derive(serde::Deserialize)]
 struct GoogleFlightsResponse {
@@ -141,15 +142,15 @@ impl Client {
 
                 Some(FlightResponse {
                     flight: FlightRequest {
-                        origin: super::Airport {
+                        origin: flights::Airport {
                             id: first.departure_airport.id.clone(),
                             name: Some(first.departure_airport.name.clone()),
                         },
-                        dest: super::Airport {
+                        dest: Airport {
                             id: last.arrival_airport.id.clone(),
                             name: Some(last.arrival_airport.name.clone()),
                         },
-                        date: vec![super::Date { date, time: None }],
+                        date: vec![Date { date, time: None }],
                         class: req.class,
                         stops: req.stops,
                         passengers: req.passengers,
@@ -167,7 +168,7 @@ impl Client {
 impl Provider for Client {
     async fn search(
         &self,
-        req: super::FlightRequest,
+        req: FlightRequest,
     ) -> Result<Vec<FlightResponse>, Box<dyn std::error::Error>> {
         let queries = Self::build_queries(&req);
         let mut join_set = JoinSet::new();
@@ -191,10 +192,10 @@ impl Provider for Client {
 
     async fn search_roundtrip(
         &self,
-        req: super::RoundTripRequest,
-    ) -> Result<super::RoundTripResponse, Box<dyn std::error::Error>> {
+        req: RoundTripRequest,
+    ) -> Result<RoundTripResponse, Box<dyn std::error::Error>> {
         let (inbound, outbound) = tokio::join!(self.search(req.inbound), self.search(req.outbound));
-        Ok(super::RoundTripResponse {
+        Ok(RoundTripResponse {
             inbound: inbound?,
             outbound: outbound?,
         })
@@ -204,13 +205,13 @@ impl Provider for Client {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use crate::providers::{Airport, Date, TimeRange, Times};
+    use flights::{Airport, Date, TimeRange, Times};
     use chrono::NaiveDate;
     use std::collections::HashMap;
 
     #[test]
     fn test_build_query() {
-        let req = crate::providers::FlightRequest {
+        let req = FlightRequest {
             origin: Airport {
                 id: "LIS".to_string(),
                 name: None,

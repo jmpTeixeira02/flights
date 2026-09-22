@@ -1,5 +1,3 @@
-pub mod google_flights;
-
 #[derive(Clone, Copy)]
 pub enum Class {
     Economy,
@@ -79,5 +77,5 @@ pub trait Provider {
     fn search_roundtrip(
         &self,
         req: RoundTripRequest,
-    ) -> impl Future<Output = Result<RoundTripResponse, Box<dyn std::error::Error>>>;
+    ) -> impl std::future::Future<Output = Result<RoundTripResponse, Box<dyn std::error::Error>>>;
 }

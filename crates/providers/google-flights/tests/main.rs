@@ -1,5 +1,5 @@
-use flights::providers::google_flights::{Client, GoogleFlightsConfig};
-use flights::providers::{Airport, Class, Date, FlightRequest, Provider, Stops, TimeRange, Times};
+use flights::{Airport, Class, Date, FlightRequest, Provider, Stops, TimeRange, Times};
+use google_flights::{Client, GoogleFlightsConfig};
 use wiremock::matchers::{method, query_param};
 use wiremock::{Mock, MockServer, ResponseTemplate};
 
